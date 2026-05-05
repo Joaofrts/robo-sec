@@ -3,6 +3,7 @@ import os
 import json
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 import nest_asyncio
+import asyncio
 
 nest_asyncio.apply()
 
@@ -111,4 +112,5 @@ async def main():
         print("\nAutomação finalizada com sucesso!")
 
 # Executa a função principal
-await main()
+if __name__ == "__main__":
+    asyncio.run(main())
