@@ -8,8 +8,8 @@ import asyncio
 nest_asyncio.apply()
 
 # 1. Pegando as senhas do cofre do GitHub (Secrets)
-USUARIO = os.environ.get("USUARIO_SEI")
-SENHA = os.environ.get("SENHA_SEI")
+USUARIO = os.environ.get("SEI_USUARIO")
+SENHA = os.environ.get("SEI_SENHA")
 CREDENCIAIS_JSON = os.environ.get("GCP_CREDENTIALS")
 
 # 2. Autenticação invisível no Google Sheets
