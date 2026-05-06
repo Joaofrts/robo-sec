@@ -7,6 +7,7 @@ on:
     # precisamos agendar para as 11:00h no UTC.
     # A sintaxe "0 11 * * 1-5" significa: Minuto 0, Hora 11, de Segunda(1) a Sexta(5).
     - cron: '0 11 * * 1-5' 
+    - cron: '0 20 * * 1-5'
   workflow_dispatch: # Essa linha mágica cria um botão para rodarmos manualmente quando quisermos testar!
 
 jobs:
