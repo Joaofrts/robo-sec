@@ -6,7 +6,7 @@ on:
     # Como você está na Bahia (UTC-3), para rodar às 08:00h da manhã aí, 
     # precisamos agendar para as 11:00h no UTC.
     # A sintaxe "0 11 * * 1-5" significa: Minuto 0, Hora 11, de Segunda(1) a Sexta(5).
-    - cron: '0 10 * * 1-5' 
+    - cron: '0 10,19 * * 1-5' 
     
   workflow_dispatch: # Essa linha mágica cria um botão para rodarmos manualmente quando quisermos testar!
 
